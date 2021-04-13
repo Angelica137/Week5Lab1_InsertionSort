@@ -15,10 +15,18 @@ class InsertionSort {
 			// store the value of A[j] in a variable so we can keep it
 			// and place it corerclty as we sort in place
 			int key = array[j];
-			// store the previous index in a var i
+			// store the previous index in a var i so we can compare
+			// A[j] with preceding values A[0.. j - 1]
 			int i = j - 1;
-			// while i exists and is greater than A[j]
-			System.out.println(key);
+			// now we want to iterate through all indeces below j
+			// and check their values against key (A[j]). We do it in reverse order
+			// from the index closer to j
+			while (i >= 0) {
+				if (array[i] > key) {
+					System.out.println(key);
+				}
+				i = i - 1;
+			}
 		}
 		return array;
 
