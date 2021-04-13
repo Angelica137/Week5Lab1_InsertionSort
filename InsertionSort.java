@@ -3,7 +3,7 @@ import java.util.Arrays;
 class InsertionSort {
 	// accepts an array of ints as anrgument and sorts it
 	// in ascending order
-	public int[] sort(int[] array) {
+	public int[] sortIncreasing(int[] array) {
 		// start from the second index since the first index
 		// will by default be the smallest when drawn first
 		// declare an int to store this index
