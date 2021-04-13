@@ -22,7 +22,10 @@ class InsertionSort {
 			// and check their values against key (A[j]). We do it in reverse order
 			// from the index closer to j
 			while (i >= 0) {
+				// insert key in the correct place
 				if (array[i] > key) {
+					// assign this greater value to the next position i + 1
+					array[i + 1] = array[i];
 					System.out.println(key);
 				}
 				i = i - 1;
