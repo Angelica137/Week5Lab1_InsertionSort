@@ -5,12 +5,11 @@ class InsertionSort {
 	// in ascending order
 	public int[] sort(int[] array) {
 		// start from the second index since the first index
-		// will be default be the smallest when drawn first
+		// will by default be the smallest when drawn first
 		// declare an int to store this index
-		int j;
 		// iterate through indexes 1 - a.length
-		for (j = 1; j < array.length; j++) {
-			// we will compare each index with the previous ones
+		for (int j = 1; j < array.length; j++) {
+			// we will compare each index with the previous ones a[j - 1]
 			// to see if they are greater in value
 			// store the value of A[j] in a variable so we can keep it
 			// and place it corerclty as we sort in place
@@ -20,7 +19,7 @@ class InsertionSort {
 			int i = j - 1;
 			// now we want to iterate through all indeces below j
 			// and check their values against key (A[j]). We do it in reverse order
-			// from the index closer to j
+			// from the index closer to j, j -1.
 			while (i >= 0 && array[i] > key) {
 				// assign this greater value to the next position i + 1
 				array[i + 1] = array[i];
