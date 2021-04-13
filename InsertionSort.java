@@ -6,10 +6,19 @@ class InsertionSort {
 	public int[] sort(int[] array) {
 		// start from the second index since the first index
 		// will be default be the smallest when drawn first
-		// dclare an int to store this index
+		// declare an int to store this index
 		int j;
+		// iterate through indexes 1 - a.length
 		for (j = 1; j < array.length; j++) {
-			System.out.println("I work");
+			// we will compare each index with the previous ones
+			// to see if they are greater in value
+			// store the value of A[j] in a variable so we can keep it
+			// and place it corerclty as we sort in place
+			int key = array[j];
+			// store the previous index in a var i
+			int i = j - 1;
+			// while i exists and is greater than A[j]
+			System.out.println(key);
 		}
 		return array;
 
