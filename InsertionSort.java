@@ -37,6 +37,15 @@ class InsertionSort {
 	// problem 2.
 	// sortReverse uses an insertion sort aglorithm to sort an array
 	public int[] sortReverse(int[] array) {
+		// the first item in the array is the largest at thapt point
+		// coz it is the only one we have looked at
+		// so we move on to the second item index 1
+		// from index 1 and up to the last index, pick each one and
+		// compare it with the items you have already sorted and see
+		// where they belong
+		for (int i = 1; i < array.length; i++) {
+			System.out.println(array[i]);
+		}
 		return array;
 	}
 
