@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 class InsertionSort {
+	// problem 1. ascending sort
 	// accepts an array of ints as anrgument and sorts it
 	// in ascending order
 	public int[] sortIncreasing(int[] array) {
@@ -31,6 +32,12 @@ class InsertionSort {
 
 		return array;
 
+	}
+
+	// problem 2.
+	// sortReverse uses an insertion sort aglorithm to sort an array
+	public int[] sortReverse(int[] array) {
+		return array;
 	}
 
 }
