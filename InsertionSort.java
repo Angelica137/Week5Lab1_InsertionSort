@@ -47,7 +47,23 @@ class InsertionSort {
 			// store the value at each index in a variable so we
 			// can place it in the correct position
 			int key = array[i];
-			System.out.println(key);
+			// create a valriable that tracks the item immediately to the left
+			// of i, i.e. i - 1
+			int j = i - 1;
+			// while j >= 0 ie, while there is an existing index for it
+			// check if a[j] is less than key, if so
+			// let the next item in the array, a[j + 1] equal the value of a[j]
+			// check the next value => j = j -1, and repeat while
+			// there is an item int he list and its value is less
+			// than the value of key
+
+			while (j >= 0 && array[j] < key) {
+				array[j + 1] = array[j];
+				j = j - 1;
+			}
+			// when you find an item a[j] whose value is larger than key
+			// place the key before it ad a[j + 1]
+			array[j + 1] = key;
 		}
 		return array;
 	}
