@@ -44,7 +44,10 @@ class InsertionSort {
 		// compare it with the items you have already sorted and see
 		// where they belong
 		for (int i = 1; i < array.length; i++) {
-			System.out.println(array[i]);
+			// store the value at each index in a variable so we
+			// can place it in the correct position
+			int key = array[i];
+			System.out.println(key);
 		}
 		return array;
 	}
